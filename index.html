@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Horário de Saída</title>
+</head>
+<body>
+    <main>
+        <form>
+            <h1>Selecione o horário e dia de trabalho:</h1>
+
+            <label for="entradaHoras">Selecione a hora:</label>
+            <select name="entradaHoras" class="optGroup__Hora">
+                <!-- add via js -->
+            </select>
+
+            <label for="entradaMinutos">Selecione os minutos:</label>
+            <select name="entradaMinutos" class="optGroup__Minutos">
+                <!-- add via js -->
+            </select>
+
+            <label for="dia">Selecione o dia:</label>
+            <select name="dia" id="dia__select">
+                <option value="Domingo">Domingo</option>
+                <option value="Segunda-feira">Segunda-feira</option>
+                <option value="Terca-feira">Terça-feira</option>
+                <option value="Quarta-feira">Quarta-feira</option>
+                <option value="Quinta-feira">Quinta-feira</option>
+                <option value="Sexta-feira">Sexta-feira</option>
+                <option value="Sabado">Sábado</option>
+            </select>
+
+            <button>Enviar</button>
+        </form>
+
+        <h2 class="hidden">Seu horário de saída é: <span></span></h2>
+    </main>
+    <script src="./model/addOpcoes.js" type="module"></script>
+    <script src="./model/script.js" type="module"></script>
+</body>
+</html>
