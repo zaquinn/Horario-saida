@@ -13,31 +13,51 @@
         <form>
             <h1>Selecione o horário e dia de trabalho:</h1>
 
-            <label for="entradaHoras">Selecione a hora:</label>
-            <select name="entradaHoras" class="optGroup__Hora">
+            <div class="divSelect">
+
+            <label for="entradaHoras" class="fonte__Padrao">Selecione a hora:</label>
+            <select name="entradaHoras" class="optGroup__Hora" required oninvalid="this.setCustomValidity('Preencha esse campo')" 
+            onchange="try{setCustomValidity('')}catch(e){}">
+            <option value="" selected>--Hora--</option>
                 <!-- add via js -->
             </select>
 
-            <label for="entradaMinutos">Selecione os minutos:</label>
-            <select name="entradaMinutos" class="optGroup__Minutos">
+            </div>
+
+            <div class="divSelect">
+
+            <label for="entradaMinutos" class="fonte__Padrao">Selecione os minutos:</label>
+            <select name="entradaMinutos" class="optGroup__Minutos" required oninvalid="this.setCustomValidity('Preencha esse campo')" 
+            onchange="try{setCustomValidity('')}catch(e){}">
+            <option value="" selected>--Minutos--</option>
                 <!-- add via js -->
             </select>
 
-            <label for="dia">Selecione o dia:</label>
-            <select name="dia" id="dia__select">
-                <option value="Domingo">Domingo</option>
-                <option value="Segunda-feira">Segunda-feira</option>
-                <option value="Terca-feira">Terça-feira</option>
-                <option value="Quarta-feira">Quarta-feira</option>
-                <option value="Quinta-feira">Quinta-feira</option>
-                <option value="Sexta-feira">Sexta-feira</option>
-                <option value="Sabado">Sábado</option>
-            </select>
+            </div>
 
+            <div class="divSelect">
+            <label for="dia" class="fonte__Padrao">Selecione o dia:</label>
+            <select name="dia" id="dia__select" required oninvalid="this.setCustomValidity('Preencha esse campo')" 
+            onchange="try{setCustomValidity('')}catch(e){}">
+                <option value="" selected>--Selecione o dia--</option>
+                <option value="domingo">Domingo</option>
+                <option value="segunda-feira">Segunda-Feira</option>
+                <option value="terça-feira">Terça-Feira</option>
+                <option value="quarta-feira">Quarta-Feira</option>
+                <option value="quinta-feira">Quinta-Feira</option>
+                <option value="sexta-feira">Sexta-Feira</option>
+                <option value="sábado">Sábado</option>
+            </select>
+            </div>
+
+            <div class="buttonDiv">
             <button>Enviar</button>
+            </div>
         </form>
 
-        <h2 class="hidden">Seu horário de saída é: <span></span></h2>
+        <div class="hidden div__h2">
+        <h2 class="hidden fonte__Padrao--h2">Horário de saída: <span class="fonte__Padrao--span"></span></h2>
+        </div>
     </main>
     <script src="./model/addOpcoes.js" type="module"></script>
     <script src="./model/script.js" type="module"></script>

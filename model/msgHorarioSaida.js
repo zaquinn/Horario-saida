@@ -41,7 +41,7 @@ class horarioSaida {
 
         this.dia === "Domingo" ? calculoHoras = Number(this.hora) + 6 : calculoHoras = Number(this.hora) + 9
         
-        span.innerText = `${this.dia} seu horário de saída é às ${calculoHoras}h${this.minuto}.`
+        span.innerText = `Entrando às ${this.hora}:${this.minuto}, ${this.dia} seu horário de saída é às ${calculoHoras}:${this.minuto}.`
     }
 }
 

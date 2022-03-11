@@ -5,6 +5,10 @@ const form = document.querySelector("form")
 
 const span = document.querySelector("span")
 
+const h2 = document.querySelector("h2")
+
+const h2div = document.querySelector(".div__h2")
+
 OpcoesHorario.gerarHoras()
 
 OpcoesHorario.gerarMinutos()
@@ -28,6 +32,9 @@ const mostrarHorarioSaida = form.addEventListener("submit", (event) => {
     }
 
     const newHora = new horarioSaida(listaDados.entradaHoras, listaDados.entradaMinutos, listaDados.dia)
+
+    h2div.classList.remove("hidden")
+    h2.classList.remove("hidden")
 
     newHora.horaDeSaida()
     

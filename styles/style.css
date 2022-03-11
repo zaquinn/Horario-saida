@@ -1,3 +1,59 @@
-/* .hidden {
+body {
+    background-color: lightpink;
+}
+
+h1 { 
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+    font-family: Helvetica, sans-serif;
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.divSelect {
+    margin: 0px 0px 10px 10px;
+}
+
+.fonte__Padrao {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Helvetica, sans-serif;
+}
+
+.buttonDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    font-size: 20px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 500;
+    border: none;
+    padding: 4px 20px 4px 20px;
+    background-color: #e86786;
+    color: white;
+}
+
+.div__h2 {
+    background-color: white;
+    border: 2px solid #e86786;
+    border-radius: 20px;
+    margin: 10px 5px 10px 5px;
+}
+
+.fonte__Padrao--h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Helvetica, sans-serif;
+    margin: 10px 5px 10px 10px;
+    color: #e86786;
+}
+
+.hidden {
     visibility: hidden;
-} */
+}
